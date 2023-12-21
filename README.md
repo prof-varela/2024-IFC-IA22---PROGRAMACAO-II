@@ -1,7 +1,7 @@
 # 2024-IFC-IA22---PROGRAMACAO-II
 ...
 
-# 1.Revisão
+# 1. Revisão
 
 ## 1.1 Revisão: HTML/CSS
 
@@ -184,4 +184,23 @@ Requisição e Resposta:
 
 Segurança:
 - HTTPS: Versão segura do HTTP que utiliza criptografia SSL/TLS para proteger os dados durante a transmissão.
+
+# 2. Criação do ambiente de desenvolvimento
+
+- Instalar nodejs/npm (https://nodejs.org/en/download/current)
+- Crie uma pasta para o projeto
+- Abra o terminal na pasta criada e inicie o projeto com o seguinte comando
+  - ```npm init -y```
+  - isso ira criar o arquivo ```package.json``` responsável por gerenciar o projeto
+- Ainda com o terminal aberto na pasta do projeto instale as bibliotecas de desenvolvimento com o seguinte comando:
+  - ```npm install --save-dev nodemon ts-node typescript```
+- Agore instale as dependencias de execução com o seguinte comando:
+  - ```npm install express cors sqlite sqlite3```
+- Crie o arquivo de configuração do typescript com o seguinte comando:
+  - ```npx tsc --init```
+- Isso ira criar um arquivo chamado ```tsconfig.json``` abra este arquivo e procure a linha ```outDir```, descomente esta linha e mude para ```outDir: "./dist```
+- Por último configure os comandos de compilação e teste no arquivo ```package.json```, abra o arquivo e desntro da sessão ```scripts``` adicione as entradas:
+  - ```"dev": "nodemon ./src/index.ts"```
+  - ```"build": "tsc"```
+  - ```"start": "node ./dist/index.js"```
 
