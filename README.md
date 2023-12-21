@@ -142,3 +142,46 @@ Requisitos:
 - Implementar métodos para marcar uma tarefa como concluída e exibir informações da tarefa.
 - Criar uma lista de tarefas utilizando essa classe.
 - Imprimir na tela o status e descrição de todas as tarefas.
+  
+## 1.4 Revisão: HTTP (Hypertext Transfer Protocol) e DNS (Domain Name System)
+
+Handshake TCP/IP:
+- Estabelecimento de uma conexão TCP/IP entre o cliente e o servidor antes da transmissão dos dados.
+
+HTTP:
+- Define a maneira como os clientes (navegadores) e servidores (onde os sites estão hospedados) se comunicam.
+
+Métodos HTTP:
+- GET, POST, PUT, DELETE, entre outros.
+- GET: Solicita dados de um recurso.
+- POST: Envia dados para serem processados por um recurso.
+
+Status das Respostas:
+- Códigos de status HTTP (200 - OK, 404 - Not Found, 500 - Internal Server Error, etc.)
+
+Headers e Corpo da Mensagem:
+- Headers: Metadados da requisição/resposta (tipos de conteúdo, cache, autenticação, etc.)
+- Corpo da Mensagem: Dados propriamente ditos (HTML, JSON, imagens, etc.)
+
+DNS (Domain Name System):
+- Traduz nomes de domínio (ex: www.exemplo.com) em endereços IP (ex: 192.0.2.1).
+
+Hierarquia de Domínios:
+- Estrutura em árvore com níveis: domínio de alto nível (TLD), domínio de segundo nível, subdomínios, etc.
+
+Servidores DNS:
+- Servidores que armazenam registros de mapeamento de nomes para IPs.
+- Resolução de DNS: processo de encontrar o endereço IP correspondente a um nome de domínio.
+
+Cache e Redundância:
+- Caching: armazenamento temporário de consultas DNS para melhorar a velocidade.
+- Redundância: múltiplos servidores DNS para garantir disponibilidade e segurança.
+Funcionamento Geral:
+
+Requisição e Resposta:
+- O navegador faz uma requisição HTTP para um servidor, usando o DNS para encontrar o endereço IP do servidor.
+- O servidor responde à requisição enviando os dados requisitados de volta ao navegador.
+
+Segurança:
+- HTTPS: Versão segura do HTTP que utiliza criptografia SSL/TLS para proteger os dados durante a transmissão.
+
