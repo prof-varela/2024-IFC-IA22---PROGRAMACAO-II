@@ -185,7 +185,7 @@ Requisição e Resposta:
 Segurança:
 - HTTPS: Versão segura do HTTP que utiliza criptografia SSL/TLS para proteger os dados durante a transmissão.
 
-# 2. Criação do ambiente de desenvolvimento
+# 2. Passo-a-passo: Criação do ambiente de desenvolvimento
 
 - Instalar nodejs/npm (https://nodejs.org/en/download/current)
 - Crie uma pasta para o projeto
