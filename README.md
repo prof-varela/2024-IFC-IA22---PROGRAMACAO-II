@@ -203,4 +203,12 @@ Segurança:
   - ```"dev": "nodemon ./src/index.ts"```
   - ```"build": "tsc"```
   - ```"start": "node ./dist/index.js"```
+  - não se esqueça de adicionar ```,``` no final das linhas se necessário
+- Crie uma pasta chamada ```src``` e dentro dela crie um arquivo chamado ```index.ts``` com o seguinte conteúdo ```console.log("hello world")```
+- Agora você pode testar se o ambiente foi corretamente criado
+  - Teste de tempo de desenvolvimento
+    - execute ```npm run dev```
+  - Teste de compilação
+    - execute ```npm run build```
+    - e em seguida ```npm start```
 
